@@ -1,4 +1,4 @@
 import uvicorn
 
 if __name__ == "__main__":
-    uvicorn.run("source.main:api", reload=True, port=5000, host='0.0.0.0')
+    uvicorn.run("src.server:api", reload=True, port=5000, host='0.0.0.0')

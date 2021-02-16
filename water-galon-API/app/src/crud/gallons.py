@@ -2,8 +2,8 @@ import sqlite3
 from typing import Generator
 from sqlalchemy.orm import Session
 
-from source.dependencies import DATABASE_PATH
-from source.models.gallons import Gallons_Model
+from src.dependencies import DATABASE_PATH
+from src.models.gallons import Gallons_Model
 
 async def insert_gallon(data, db: Session):
     db_gallon = Gallons_Model(**data.dict())
